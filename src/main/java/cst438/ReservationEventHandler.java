@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 
+//creates listener for new messages and prints received messages to console.
 @RabbitListener(queues = "city-reservation-q1")
 public class ReservationEventHandler {
 	
